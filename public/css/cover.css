@@ -1,0 +1,96 @@
+/* -------- GLOBAL -------- */
+body {
+    font-family: "Poppins", sans-serif;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* A4 Page Size (For Download / Print) */
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+html, body {
+    width: 210mm;
+    height: 297mm;
+}
+
+/* Prevent elements from breaking across pages */
+* {
+    page-break-inside: avoid;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* -------- HEADER SECTION -------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-logo,
+.right-logo {
+    width: 90px;
+}
+
+/* College Title */
+.title {
+    text-align: center;
+    width: 60%;
+}
+
+.title h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sub {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* -------- CENTER IMAGE -------- */
+.center-image {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.center-image img {
+    width: 100%;
+    border-radius: 25px;
+    /* border: 3px solid #0077ff; */
+}
+
+/* -------- ASSIGNMENT TITLE -------- */
+.assignment-title {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* -------- SUBJECT TITLE (centered) -------- */
+.subname {
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 0 40px 0;
+}
+
+/* -------- STUDENT DETAILS -------- */
+.details {
+    font-size: 16px;
+    line-height: 2;
+    margin-left: 5%;
+}

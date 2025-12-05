@@ -1,0 +1,116 @@
+/* ================================
+    Global Styles
+================================ */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================
+    Form Container Styling
+================================ */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.form-container h3 {
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* ================================
+    Input Styles
+================================ */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 10px 12px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.25);
+}
+
+/* ================================
+    Button Styles
+================================ */
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* ================================
+    Cover Page Styles
+================================ */
+.cover-container {
+    width: 210mm;     /* A4 width */
+    height: 297mm;    /* A4 height */
+    padding: 30px 40px;
+    background: #ffffff;
+    margin: auto;
+    border: 1px solid #ddd;
+}
+
+.cover-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.cover-field {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.cover-label {
+    font-weight: 600;
+}
+
+.print-btn {
+    display: block;
+    margin: 20px auto;
+    font-size: 16px;
+    padding: 10px 20px;
+    
+}
+
+/* A4 Print Settings */
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+}
+
+/* Hide buttons and UI elements when printing */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
